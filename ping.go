@@ -1,4 +1,4 @@
-package ginping 
+package ginping
 
 import (
 	"net/http"
@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// Ping just replies "OK"
 func Ping(c *gin.Context) {
 	c.JSON(http.StatusOK, "OK")
 }
-
